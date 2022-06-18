@@ -1,19 +1,21 @@
 # A LaTeX Resume Template
 
-This project is a recreation of a Google Doc resume template in LaTeX that
-provides a document class containing environments and commands for programmer's
-resumes.
+This project is the recreation of a Google Docs resume template in LaTeX that
+uses a custom document class for style and formatting so you can focus on the
+resume's content.
 
-See `resume.pdf` for an example output.
+![An example resume](resume.png)
 
 ## Getting Started
 
-You can begin writing your own resume with this template by forking this repo
-and modifying the contents of `resume.tex`.  Compile the document with your
-favorite LaTeX runtime, or use the `Makefile` to compile within a Docker
-container using [tectonic](https://tectonic-typesetting.github.io/en-US/).
+Write your own resume with this template by forking this repo and modifying the
+contents of `resume.tex`.  Compile the document to PDF with your favorite LaTeX
+runtime, or use the `Makefile` to compile with
+[tectonic](https://tectonic-typesetting.github.io/en-US/) in a Docker
+container.
 
 ```sh
-git clone ...
+git clone git@github.com:michaeljoelphillips/latex-resume-template.git
+cd latex-resume-template
 make
 ```
