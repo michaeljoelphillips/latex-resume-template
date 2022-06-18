@@ -24,12 +24,14 @@
 		\section*{
 			\fontsize{36}{44}\selectfont #1
 			\marginpar{
+				\vspace{-0.27in}
 				\large\raggedright{\textsf{\textbf{#2}}}
+				\\
 				\large\textsf{\textbf{#3}}
 			}
 		}
 		\subsection*{\normalsize\textsf{\textmd{#4}}}
-		\vspace{0.5in}
+		\vspace{0.2in}
 	}
 
 \newenvironment{job}[4]
@@ -47,7 +49,10 @@
 \newenvironment{project}[3]
 	{
 		\subsection*{\Large #1 \textmd{-- \textit{#2}}}
-		\subsubsection*{\textsf{\textmd{\textcolor{text}{#3}}}}
+		\ifx&#3&%
+		\else
+			\subsubsection*{\textsf{\textmd{\textcolor{text}{#3}}}}
+		\fi
 		\color{text}
 	}
 	{
